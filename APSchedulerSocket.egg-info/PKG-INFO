@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: APSchedulerSocket
-Version: 0.4.1
+Version: 0.4.2
 Summary: The purpose of the application is to solve the problem of having a unique 'APScheduler' object for a multithreaded application. The project aims to easily implement a client-server architecture to control the scheduled processes. Another great advantage is that you can use the scheduler in distributed processes or servers.
 Home-page: UNKNOWN
 Author: Rodrigo Ristow
@@ -116,5 +116,5 @@ Description: The purpose of the application is to solve the problem of having a 
         
 Platform: UNKNOWN
 Classifier: Programming Language :: Python
-Provides-Extra: test
 Provides-Extra: development
+Provides-Extra: test
