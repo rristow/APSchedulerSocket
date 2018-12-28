@@ -1,0 +1,16 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+APSchedulerSocket.egg-info/PKG-INFO
+APSchedulerSocket.egg-info/SOURCES.txt
+APSchedulerSocket.egg-info/dependency_links.txt
+APSchedulerSocket.egg-info/entry_points.txt
+APSchedulerSocket.egg-info/not-zip-safe
+APSchedulerSocket.egg-info/requires.txt
+APSchedulerSocket.egg-info/top_level.txt
+apschedulersocket/__init__.py
+apschedulersocket/schedulers.py
+apschedulersocket/tests/__init__.py

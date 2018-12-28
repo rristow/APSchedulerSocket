@@ -1,0 +1,13 @@
+setuptools
+APScheduler
+
+[development]
+zest.releaser
+check-manifest
+
+[test]
+nose
+nose-selecttests
+coverage
+unittest2
+flake8

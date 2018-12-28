@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: APSchedulerSocket
+Version: 0.4.dev0
+Summary: The purpose of the application is to solve the problem of having a unique 'APScheduler' object for a multithreaded application. The project aims to easily implement a client-server architecture to control the scheduled processes. Another great advantage is that you can use the scheduler in distributed processes or servers.
+Home-page: UNKNOWN
+Author: Rodrigo Ristow
+Author-email: rodrigo@maxttor.com
+License: BSD
+Description: The purpose of the application is to solve the problem of having a unique 'APScheduler' object for a multithreaded application. The project aims to easily implement a client-server architecture to control the scheduled processes. Another great advantage is that you can use the scheduler in distributed processes or servers.
+        
+        INSTALL
+        =======
+        
+        ::
+        
+            $ pip install APSchedulerSocket
+        
+        USAGE
+        =====
+        
+        ::
+        
+            from APSchedulerSocket.apschedulersocket import  background_scheduler
+            from datetime import datetime
+            def my_process():
+                print("Hello world!")
+            background_scheduler.add_job(id="my_process", my_process, 'interval', next_run_time=datetime.noew(), minutes=3)
+        
+        
+        DEVELOP
+        =======
+        
+        ::
+        
+            $ git clone https://github.com/rristow/APSchedulerSocket APSchedulerSocket
+            $ cd APSchedulerSocket
+            $ make
+        
+        RUNNING TESTS
+        =============
+        
+        ::
+            $ make test
+        Changelog
+        =========
+            
+        
+        0.1 (unreleased)
+        ----------------
+        
+        - Initial release.
+          [Rodrigo Ristow]
+        APSchedulerSocket Copyright (c) 2012, Rodrigo Ristow
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions
+        are met:
+        1. Redistributions of source code must retain the above copyright
+           notice, this list of conditions and the following disclaimer.
+        2. Redistributions in binary form must reproduce the above copyright
+           notice, this list of conditions and the following disclaimer in the
+           documentation and/or other materials provided with the distribution.
+        3. The name of the author may not be used to endorse or promote products
+           derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+        IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+        OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+        NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+        THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Provides-Extra: development
+Provides-Extra: test
