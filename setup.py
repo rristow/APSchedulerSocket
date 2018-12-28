@@ -12,7 +12,7 @@ def read(*rnames):
 
 setup(
     name='APSchedulerSocket',
-    version='0.4.dev0',
+    version='0.4.1',
     description="The purpose of the application is to solve the problem of having a unique 'APScheduler' object for a multithreaded application. The project aims to easily implement a client-server architecture to control the scheduled processes. Another great advantage is that you can use the scheduler in distributed processes or servers.",
     long_description=read('README.rst') +
                      read('HISTORY.rst') +
